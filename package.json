@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/comnipl/website#readme",
   "devDependencies": {
+    "@biomejs/biome": "1.9.3",
     "typescript": "catalog:"
   }
 }
