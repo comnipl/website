@@ -7,7 +7,12 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "include": [".vscode/**", "packages/**", "**/public/**", "./*.json"],
+    "include": [
+      "./.vscode/**",
+      "./packages/**",
+      "**/public/**",
+      "./*.{js,mjs,ts,json}"
+    ],
     "ignore": ["node_modules/**", "tsconfig.json"]
   },
   "formatter": {
