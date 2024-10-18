@@ -1,0 +1,31 @@
+---
+import { tv } from "tailwind-variants"
+interface Props {
+  style?: "default" | "discord"
+  size?: "small" | "medium" | "large"
+}
+const { style = "default", size } = Astro.props
+
+const buttonStyle = tv({
+  base: "py-3 px-8 flex gap-4 items-center text-lg rounded-2xl font-medium",
+  variants: {
+    color: {
+      default: "bg-primary-500 text-white",
+      discord: "bg-[#5865F2] text-white"
+    },
+    size: {
+      small: "py-3 px-4 text-sm",
+      medium: "py-4 px-8 text-lg",
+      large: "py-5 px-12 text-xl"
+    }
+  },
+  defaultVariants: {
+    color: "default",
+    size: "medium"
+  }
+})
+---
+
+<button class={buttonStyle({ color: style, size })}>
+  <slot />
+</button>
