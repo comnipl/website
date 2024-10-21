@@ -7,7 +7,7 @@ interface Props {
 const { style = "default", size } = Astro.props
 
 const buttonStyle = tv({
-  base: "py-3 px-8 flex gap-4 items-center text-lg rounded-2xl font-medium",
+  base: "py-3 px-8 w-fit flex gap-4 items-center text-lg rounded-2xl font-medium hover:shadow-sm hover:brightness-105 duration-200",
   variants: {
     color: {
       default: "bg-primary-500 text-white",
