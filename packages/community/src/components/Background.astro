@@ -42,7 +42,6 @@
 
   if (iconBg) {
     for (let i = 0; i < 7; i++) {
-      const insertElement = `<div class="icon_cols">${getRandomIcon()}</div>`
       if (i > 3) {
         iconBg.insertAdjacentHTML('beforeend', `<div class="icon_cols hidden xl:block">${getRandomIcon()}</div>`)
       } else {
