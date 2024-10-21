@@ -57,9 +57,17 @@
     targets: '.lucide',
     opacity: [0, 1],
     rotate: () => [anime.random(0, 360), `+=${getRandomRange(-10,10)}`],
-    top: () => [`${anime.random(20, 110)}vh`, `-=${getRandomRange(10,20)}`],
+    top: () => [`${anime.random(20, 100)}vh`, `-=${getRandomRange(10,20)}`],
     duration: 5000,
     delay: anime.stagger(300),
     easing: 'easeInOutBack'
+  })
+  anime({
+    targets: '.lucide',
+    translateY: () => [0, anime.random(-5, 5)],
+    direction: 'alternate',
+    loop: true,
+    duration: 2000,
+    easing: 'easeInOutSine',
   })
 </script>
