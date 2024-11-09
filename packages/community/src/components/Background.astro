@@ -53,20 +53,22 @@
   const getRandomRange = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min
 
   anime({
-    targets: '.lucide',
+    targets: '#icon-bg .lucide',
     opacity: [0, 1],
     rotate: () => [anime.random(0, 360), `+=${getRandomRange(-10,10)}`],
     top: () => [`${anime.random(20, 100)}vh`, `-=${getRandomRange(10,20)}`],
-    duration: 5000,
-    delay: anime.stagger(300),
+    duration: 4000,
+    delay: anime.stagger(200),
     easing: 'easeInOutBack'
   })
   anime({
-    targets: '.lucide',
-    translateY: () => [0, anime.random(-5, 5)],
+    targets: '#icon-bg .lucide',
+    translateX: () => [0, anime.random(-5, 5)],
+    translateY: () => [0, anime.random(-10, 10)],
     direction: 'alternate',
     loop: true,
     duration: 2000,
+    delay: anime.stagger(200),
     easing: 'easeInOutSine',
   })
 </script>

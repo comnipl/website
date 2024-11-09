@@ -1,7 +1,7 @@
 ---
-import Header from "../components/Header.astro"
-import Button from "../components/Button.astro"
 import Background from "../components/Background.astro"
+import Button from "../components/Button.astro"
+import Header from "../components/Header.astro"
 ---
 
 <html lang="ja">
@@ -36,20 +36,23 @@ import Background from "../components/Background.astro"
 					</a>
 				</div>
 			</section>
-			<section class="relative grid grid-cols-12 py-24 gap-10">
-				<div class="absolute left-0 top-8 font-bold text-red-50 text-8xl -z-10">What is Comni.pl?</div>
-				<div class="col-span-4 col-start-2">
+			<section class="relative grid grid-cols-2 max-w-7xl mx-auto py-32">
+				<div class="absolute -left-12 top-16 font-bold text-red-50 text-8xl -z-10">What is Comni.pl?</div>
+				<div>
 					<h2 class="text-4xl font-bold">Q. Comni.plって？</h2>
 				</div>
-				<div class="font-medium text-lg col-span-6">
-					<div class="text-neutral-600 leading-relaxed tracking-wide mb-12">
-						<p>プログラミング・デザイン・映像制作・音楽......<br />「comni.pl」はクリエイティブな活動をテーマに、"やってみたい！"が見つかる場所<br />Discord Botなどを駆使した便利で居心地の良いコミュニティをあなたに！<br />雑談から質問・相談、LTなどのイベントも開催してるよ！</p>
-					<p>そして...みんなの活動の課題をエンジニアリングの力で解決しませんか？<br />ちょっぴり便利なツールやサービスも一緒に開発していきます！</p>
+				<div class="font-medium text-lg">
+					<div class="leading-relaxed tracking-wide mb-16">
+						<p>プログラミング・デザイン・映像制作・音楽……<br />「Comni.pl」は色々なジャンルの"やってみたい！"が見つかる場所。</p>
+						<p>みんなで交流できるLTとかのイベントも開催してるよ！</p>
 					</div>
 					<div>
 						<h2 class="text-6xl font-bold"><span class="block text-2xl font-bold mb-2">A. 全てのクリエーターを応援する、</span>Discordコミュニティ</h2>
 					</div>
 				</div>
+			</section>
+			<section class="w-full max-w-7xl mx-auto">
+				<h2 class="text-5xl font-semibold text-center">Comni.pl で<span class="relative">何ができる<div class="block absolute left-0 bottom-0 h-1/3 w-full bg-red-50 -z-10"></div></span>の？</h2>
 			</section>
 		</main>
 	</body>
